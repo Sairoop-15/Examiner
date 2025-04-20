@@ -1,14 +1,7 @@
 import axios from 'axios';
+import { API_URL } from '../config';
 
 // Base URL for API
-const API_URL = 'https://examiner-1.onrender.com';
-
-/**
- * Generate questions based on a topic using the backend API
- * @param {string} topic - Topic for the questions
- * @param {number} count - Number of questions to generate
- * @returns {Promise<Array>} - Array of questions
- */
 export const generateQuestions = async (topic, count = 5) => {
   try {
     const response = await axios.post(`${API_URL}/generate-questions`, {
