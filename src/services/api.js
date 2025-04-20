@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Base URL for API
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001/api';
+const API_URL = 'https://examiner-1.onrender.com';
 
 /**
  * Generate questions based on a topic using the backend API
